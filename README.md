@@ -26,8 +26,6 @@ Before the workshop, it is recommended to follow these steps:
   - Follow the instructions provided on the website to install the SelectorGadget extension
   - SelectorGadget will help you identify and extract specific HTML elements during the workshop
 
-----------------------
-
 ## Recommandations avant l'atelier
 
 Avant l'atelier, il est recommandé de suivre ces étapes :
