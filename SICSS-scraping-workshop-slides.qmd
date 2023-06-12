@@ -60,13 +60,13 @@ lang: fr
 
 -   Éthique : Tenez compte des préoccupations liées à la vie privée, de l'impact sur le site web ou la source de données, et respectez les bonnes pratiques de scraping éthique
 
-## Comprendre le fichier Robots.txt
+## /robots.txt
 
 -   *Robots.txt* : un fichier texte situé à la racine d'un site web qui fournit des instructions aux robots d'exploration web, y compris les bots de scraping, sur ce qui peut et ne peut pas être accédé
 
 -   Identifier le fichier robots.txt : Recherchez le fichier robots.txt en ajoutant \<\< /robots.txt \>\> à l'URL du site web
 
-## Jargon du fichier robots.txt
+## Jargon du fichier /robots.txt
 
 -   `User-agent` : Spécifie le robot d'exploration ou user-agent auquel les règles s'appliquent
 
@@ -74,7 +74,7 @@ lang: fr
 
     -   \<\< User-agent: \[user-agent spécifique\] \>\> : Concerne un robot d'exploration web ou bot de scraping spécifique
 
-## Jargon du fichier robots.txt
+## Jargon du fichier /robots.txt
 
 -   `Disallow` : Liste les répertoires ou fichiers qui ne doivent pas être explorés ou scrapés
 
@@ -156,9 +156,11 @@ Allow: /public/
     //div[@class='container']/h1
     ```
 
-<!-- -->
-
 -   Outil utile : [SelectorGadget](https://selectorgadget.com/)
+
+## Extraction de données (GET request)
+
+![[Source de l'image](https://bytesofgigabytes.com/networking/how-http-request-and-response-works/)](assets/http-communication.png){fig-align="left"}
 
 ## Sélection et extraction avec rvest
 
@@ -168,7 +170,8 @@ library(rvest)
 # Spécifiez l'URL de la page web
 url <- "https://www.example.com"
 
-# Lisez le contenu HTML de la page web
+# Effectuez une requête pour obtenir le contenu HTML de la page web 
+# puis lisez-le - rvest::read_html le fait tout en un
 webpage <- read_html(url)
 
 # Extrait le contenu de l'élément HTML avec l'id="titre-presentation"
@@ -192,15 +195,17 @@ container_content <- webpage |>
 
 -   Les sites web dynamiques reposent sur le rendu côté client, ce qui rend l'extraction des données difficile
 
+-   Exemple : <https://sicss.io/people>
+
 ## Contenu dynamique
 
 -   Deux solutions :
 
-    -   `RSelenium` : Paquet R avec des liens Selenium pour l'automatisation du web et le scraping de contenu dynamique
-
-    -   `API` : Explorez les APIs disponibles qui offrent un accès direct aux données dynamiques sans problèmes de rendu
+    -   `API` : Explorez les APIs disponibles qui offrent un accès direct aux données dynamiques, nécessitant généralement clé d'API
 
         -   Parfois, les APIs sont côté client, ce qui signifie qu'elles sont exécutées dans le navigateur du client plutôt que sur le serveur
+
+    -   `RSelenium`\* : Paquet R avec des liens Selenium pour l'automatisation du web et le scraping de contenu dynamique (\**Cela fonctionne mieux en Python* 🐍)
 
 # Le Web Scraping basé sur le Cloud (⚠️ avancé!)
 
@@ -213,5 +218,9 @@ container_content <- webpage |>
 -   Chacun de ces outils peut gérer l'exécution de scripts R côté serveur, permettant aux chercheurs d'utiliser ces plateformes pour exécuter des tâches de Web Scraping
 
 -   Tutoriel : <https://www.r-bloggers.com/2021/03/daily-stock-gainers-automated-web-scraping-in-r-with-github-actions/>
+
+# Questions et réponses
+
+# Pause de 5 minutes
 
 # Tutoriel
