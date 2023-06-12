@@ -48,6 +48,6 @@ Avant l'atelier, il est recommandé de suivre ces étapes :
   
 ## Further reading
 
-Luscombe, Alex, Dick, Kevin, and Walby, Kevin. 2022. Algorithmic thinking in the public interest: navigating technical, legal, and ethical hurdles to web scraping in the social sciences. Quality & Quantity, 56(3), 1023-1044. [https://doi.org/10.1007/s11135-021-01164-0](https://doi.org/10.1007/s11135-021-01164-0)
+Luscombe, Alex, Dick, Kevin, and Walby, Kevin. 2022. Algorithmic thinking in the public interest: navigating technical, legal, and ethical hurdles to web scraping in the social sciences. *Quality & Quantity*, 56(3), 1023-1044. [https://doi.org/10.1007/s11135-021-01164-0](https://doi.org/10.1007/s11135-021-01164-0)
 
-Luscombe, Alex, Duncan, Jamie, and Walby, Kevin. 2022. Jumpstarting the justice disciplines: A computational-qualitative approach to collecting and analyzing text and image data in criminology and criminal justice studies. Journal of Criminal Justice Education, 33(2), 151-171. [https://doi.org/10.1080/10511253.2022.2027477](https://doi.org/10.1080/10511253.2022.2027477)
+Luscombe, Alex, Duncan, Jamie, and Walby, Kevin. 2022. Jumpstarting the justice disciplines: A computational-qualitative approach to collecting and analyzing text and image data in criminology and criminal justice studies. *Journal of Criminal Justice Education*, 33(2), 151-171. [https://doi.org/10.1080/10511253.2022.2027477](https://doi.org/10.1080/10511253.2022.2027477)
