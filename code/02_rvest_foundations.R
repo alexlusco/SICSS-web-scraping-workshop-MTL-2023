@@ -12,9 +12,9 @@
 # unethical activities. Participants are encouraged to apply the knowledge gained responsibly and within the
 # legal and ethical boundaries of web scraping.
 #
-# The author and the SICSS UQAM organizers hold no responsibility for any misuse or unlawful activities
-# conducted using the techniques presented in this workshop. Participants are solely responsible for complying
-# with applicable laws, terms of service, and ethical guidelines when conducting web scraping activities.
+# The author holds no responsibility for any misuse or unlawful activities conducted using the techniques 
+# presented in this workshop. Participants are solely responsible for complying with applicable laws, terms of 
+# service, and ethical guidelines when conducting web scraping activities.
 #
 #################################### Workshop content starts below ####################################
 
@@ -88,7 +88,7 @@ parsed_html |>
 
 # test and validate selectors, inspect output
 
-url <- paste0("https://research.un.org/en/docs/ga/quick/regular/1")
+url <- paste0("https://research.un.org/en/docs/ga/quick/regular/55")
 
 parsed_html <- read_html(url)
 
@@ -98,7 +98,7 @@ table <- parsed_html |>
 
 table |>
   janitor::row_to_names(row_number = 1) |>
-  select(1:4)
+  select(1:6)
 
 # write for loop on 20 years of sessions (2000-2020)
 
@@ -119,7 +119,7 @@ for (u in urls) {
 
   output[[u]] <- table
 
-  Sys.sleep(1) # crawl-delay of 1 second
+  Sys.sleep(3) # crawl-delay of 3 seconds
 }
 
 resolution_tables <- bind_rows(output)

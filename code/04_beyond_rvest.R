@@ -2,19 +2,19 @@
 #
 # Author: Alex Luscombe, June 2023
 #
-# This R script was created for the SICSS UQAM 2023 workshop on web scraping with rvest. The purpose of 
-# this workshop is to provide an introduction to web scraping techniques using the rvest package in R. 
-# Participants will learn how to extract and analyze data from websites, enabling them to collect valuable 
+# This R script was created for the SICSS UQAM 2023 workshop on web scraping with rvest. The purpose of
+# this workshop is to provide an introduction to web scraping techniques using the rvest package in R.
+# Participants will learn how to extract and analyze data from websites, enabling them to collect valuable
 # information for research and analysis.
 #
-# This workshop material is intended solely for educational purposes. The examples, code snippets, and 
-# techniques demonstrated here are for learning purposes and should not be used for any unauthorized or 
-# unethical activities. Participants are encouraged to apply the knowledge gained responsibly and within the 
+# This workshop material is intended solely for educational purposes. The examples, code snippets, and
+# techniques demonstrated here are for learning purposes and should not be used for any unauthorized or
+# unethical activities. Participants are encouraged to apply the knowledge gained responsibly and within the
 # legal and ethical boundaries of web scraping.
 #
-# The author and the SICSS UQAM organizers hold no responsibility for any misuse or unlawful activities 
-# conducted using the techniques presented in this workshop. Participants are solely responsible for complying 
-# with applicable laws, terms of service, and ethical guidelines when conducting web scraping activities.
+# The author holds no responsibility for any misuse or unlawful activities conducted using the techniques 
+# presented in this workshop. Participants are solely responsible for complying with applicable laws, terms of 
+# service, and ethical guidelines when conducting web scraping activities.
 
 #################################### Workshop content starts below ####################################
 

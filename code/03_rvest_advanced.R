@@ -12,9 +12,9 @@
 # unethical activities. Participants are encouraged to apply the knowledge gained responsibly and within the
 # legal and ethical boundaries of web scraping.
 #
-# The author and the SICSS UQAM organizers hold no responsibility for any misuse or unlawful activities
-# conducted using the techniques presented in this workshop. Participants are solely responsible for complying
-# with applicable laws, terms of service, and ethical guidelines when conducting web scraping activities.
+# The author holds no responsibility for any misuse or unlawful activities conducted using the techniques 
+# presented in this workshop. Participants are solely responsible for complying with applicable laws, terms of 
+# service, and ethical guidelines when conducting web scraping activities.
 
 #################################### Workshop content starts below ####################################
 
@@ -90,7 +90,7 @@ results
 
 output <- list() # create empty list to save outputs in for loop
 
-sleep <- 1 # set crawl-delay to 1 second
+sleep <- 3 # set crawl-delay to 3 seconds
 
 for (r in 1:nrow(results)) {
   url <- results[r, ]$learn_more_source
