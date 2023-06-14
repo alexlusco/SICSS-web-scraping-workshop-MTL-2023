@@ -150,7 +150,7 @@ Allow: /public/
     </div>
     ```
 
--   `XPath` est un langage d'expression pour naviguer dans les documents `XML`
+-   `XPath` est un langage d'expression pour naviguer dans les documents `HTML`
 
     ``` xpath
     //div[@class='container']/h1
