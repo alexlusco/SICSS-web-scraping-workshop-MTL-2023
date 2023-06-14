@@ -66,22 +66,6 @@ lang: fr
 
 -   Identifier le fichier robots.txt : Recherchez le fichier robots.txt en ajoutant \<\< /robots.txt \>\> à l'URL du site web
 
-## Jargon du fichier /robots.txt
-
--   `User-agent` : Spécifie le robot d'exploration ou user-agent auquel les règles s'appliquent
-
-    -   \<\< \* \>\> (wildcard) : S'applique à tous les robots d'exploration web
-
-    -   \<\< User-agent: \[user-agent spécifique\] \>\> : Concerne un robot d'exploration web ou bot de scraping spécifique
-
-## Jargon du fichier /robots.txt
-
--   `Disallow` : Liste les répertoires ou fichiers qui ne doivent pas être explorés ou scrapés
-
--   `Allow` : Spécifie les exceptions aux règles de désactivation, autorisant des répertoires ou fichiers spécifiques à être explorés ou scrapés
-
--   `Crawl-delay` : Respectez le délai spécifié pour éviter de surcharger le serveur avec trop de requêtes en un laps de temps court
-
 ## Un exemple de fichier robots.txt
 
 ``` txt
@@ -99,6 +83,22 @@ Allow: /public/
 -   Exemple concret : <https://www.utoronto.ca/robots.txt>
 
 -   Noter que tous les sites web ne disposent pas d'un fichier robots.txt : <https://sicss.io/robots.txt>
+
+## Jargon du fichier /robots.txt
+
+-   `User-agent` : Spécifie le robot d'exploration ou user-agent auquel les règles s'appliquent
+
+    -   \<\< \* \>\> (wildcard) : S'applique à tous les robots d'exploration web
+
+    -   \<\< User-agent: \[user-agent spécifique\] \>\> : Concerne un robot d'exploration web ou bot de scraping spécifique
+
+## Jargon du fichier /robots.txt
+
+-   `Disallow` : Liste les répertoires ou fichiers qui ne doivent pas être explorés ou scrapés
+
+-   `Allow` : Spécifie les exceptions aux règles de désactivation, autorisant des répertoires ou fichiers spécifiques à être explorés ou scrapés
+
+-   `Crawl-delay` : Respectez le délai spécifié pour éviter de surcharger le serveur avec trop de requêtes en un laps de temps court
 
 # Bases de HTML
 
@@ -119,14 +119,6 @@ Allow: /public/
     </div>
     ```
 
-## Structure d'un document HTML
-
--   `<html>` : Élément racine d'une page HTML
-
--   `<head>` : Contient les métadonnées du document
-
--   `<body>` : Représente le contenu de la page HTML
-
 ## Inspection de la structure HTML
 
 -   Utilisez les outils de développeur du navigateur pour inspecter et analyser la structure HTML des pages web
@@ -136,6 +128,14 @@ Allow: /public/
     -   MacOS : `⌘ + Option + I`
 
     -   PC : `Ctrl + Shift + I`
+
+## Structure d'un document HTML
+
+-   `<html>` : Élément racine d'une page HTML
+
+-   `<head>` : Contient les métadonnées du document
+
+-   `<body>` : Représente le contenu de la page HTML
 
 # Sélection et extraction de données
 

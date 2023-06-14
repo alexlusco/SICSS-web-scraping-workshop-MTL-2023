@@ -1285,6 +1285,22 @@ Alex Luscombe
 <li><p>Identifier le fichier robots.txt : Recherchez le fichier robots.txt en ajoutant &lt;&lt; /robots.txt &gt;&gt; à l’URL du site web</p></li>
 </ul>
 </section>
+<section id="un-exemple-de-fichier-robots.txt" class="slide level2">
+<h2>Un exemple de fichier robots.txt</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1"></a>User-agent: Bingbot</span>
+<span id="cb1-2"><a href="#cb1-2"></a>Disallow: /</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>User-agent: *</span>
+<span id="cb1-5"><a href="#cb1-5"></a>Crawl-delay: 5</span>
+<span id="cb1-6"><a href="#cb1-6"></a>Disallow: /private/</span>
+<span id="cb1-7"><a href="#cb1-7"></a>Disallow: /admin/</span>
+<span id="cb1-8"><a href="#cb1-8"></a>Disallow: /confidential/ </span>
+<span id="cb1-9"><a href="#cb1-9"></a>Allow: /public/</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>Exemple concret : <a href="https://www.utoronto.ca/robots.txt" class="uri">https://www.utoronto.ca/robots.txt</a></p></li>
+<li><p>Noter que tous les sites web ne disposent pas d’un fichier robots.txt : <a href="https://sicss.io/robots.txt" class="uri">https://sicss.io/robots.txt</a></p></li>
+</ul>
+</section>
 <section id="jargon-du-fichier-robots.txt" class="slide level2">
 <h2>Jargon du fichier /robots.txt</h2>
 <ul>
@@ -1301,22 +1317,6 @@ Alex Luscombe
 <li><p><code>Disallow</code> : Liste les répertoires ou fichiers qui ne doivent pas être explorés ou scrapés</p></li>
 <li><p><code>Allow</code> : Spécifie les exceptions aux règles de désactivation, autorisant des répertoires ou fichiers spécifiques à être explorés ou scrapés</p></li>
 <li><p><code>Crawl-delay</code> : Respectez le délai spécifié pour éviter de surcharger le serveur avec trop de requêtes en un laps de temps court</p></li>
-</ul>
-</section>
-<section id="un-exemple-de-fichier-robots.txt" class="slide level2">
-<h2>Un exemple de fichier robots.txt</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1"></a>User-agent: Bingbot</span>
-<span id="cb1-2"><a href="#cb1-2"></a>Disallow: /</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a>User-agent: *</span>
-<span id="cb1-5"><a href="#cb1-5"></a>Crawl-delay: 5</span>
-<span id="cb1-6"><a href="#cb1-6"></a>Disallow: /private/</span>
-<span id="cb1-7"><a href="#cb1-7"></a>Disallow: /admin/</span>
-<span id="cb1-8"><a href="#cb1-8"></a>Disallow: /confidential/ </span>
-<span id="cb1-9"><a href="#cb1-9"></a>Allow: /public/</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>Exemple concret : <a href="https://www.utoronto.ca/robots.txt" class="uri">https://www.utoronto.ca/robots.txt</a></p></li>
-<li><p>Noter que tous les sites web ne disposent pas d’un fichier robots.txt : <a href="https://sicss.io/robots.txt" class="uri">https://sicss.io/robots.txt</a></p></li>
 </ul>
 </section></section>
 <section>
@@ -1337,14 +1337,6 @@ Alex Luscombe
 <span id="cb2-4"><a href="#cb2-4"></a><span class="kw">&lt;/div&gt;</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section>
-<section id="structure-dun-document-html" class="slide level2">
-<h2>Structure d’un document HTML</h2>
-<ul>
-<li><p><code>&lt;html&gt;</code> : Élément racine d’une page HTML</p></li>
-<li><p><code>&lt;head&gt;</code> : Contient les métadonnées du document</p></li>
-<li><p><code>&lt;body&gt;</code> : Représente le contenu de la page HTML</p></li>
-</ul>
-</section>
 <section id="inspection-de-la-structure-html" class="slide level2">
 <h2>Inspection de la structure HTML</h2>
 <ul>
@@ -1354,6 +1346,14 @@ Alex Luscombe
 <li><p>MacOS : <code>⌘ + Option + I</code></p></li>
 <li><p>PC : <code>Ctrl + Shift + I</code></p></li>
 </ul></li>
+</ul>
+</section>
+<section id="structure-dun-document-html" class="slide level2">
+<h2>Structure d’un document HTML</h2>
+<ul>
+<li><p><code>&lt;html&gt;</code> : Élément racine d’une page HTML</p></li>
+<li><p><code>&lt;head&gt;</code> : Contient les métadonnées du document</p></li>
+<li><p><code>&lt;body&gt;</code> : Représente le contenu de la page HTML</p></li>
 </ul>
 </section></section>
 <section>
